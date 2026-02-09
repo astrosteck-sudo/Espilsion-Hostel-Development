@@ -1,7 +1,7 @@
 export const hostelCardData = [
   {
     id: "HSTL001",
-    image: '../hostel-images/hostel_image_1.jpg',
+    image: 'hostel-images/hostel_image_1.jpg',
     type: 'Mixed',
     name: 'Campus Annex',
     distance: '2 km From Campus',
@@ -14,7 +14,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL002",
-    image: '../hostel-images/hostel_image_2.jpg',
+    image: 'hostel-images/hostel_image_2.jpg',
     type: 'Girls',
     name: 'Unity Lodge',
     distance: '3.5 km From Campus',
@@ -27,7 +27,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL003",
-    image: '../hostel-images/hostel_image_3.jpg',
+    image: 'hostel-images/hostel_image_3.jpg',
     type: 'Mixed',
     name: 'Queens Residence',
     distance: '1.8 km From Campus',
@@ -40,7 +40,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL004",
-    image: '../hostel-images/hostel_image_4.jpg',
+    image: 'hostel-images/hostel_image_4.jpg',
     type: 'Boys',
     name: 'Greenfield Hostel',
     distance: '4 km From Campus',
@@ -53,7 +53,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL005",
-    image: '../hostel-images/hostel_image_5.jpg',
+    image: 'hostel-images/hostel_image_5.jpg',
     type: 'Girls',
     name: 'Sunrise Hostel',
     distance: '2.5 km From Campus',
@@ -66,7 +66,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL006",
-    image: '../hostel-images/hostel_image_6.jpg',
+    image: 'hostel-images/hostel_image_6.jpg',
     type: 'Mixed',
     name: 'Victory Hostel',
     distance: '6 km From Campus',
@@ -79,7 +79,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL007",
-    image: '../hostel-images/hostel_image_7.jpg',
+    image: 'hostel-images/hostel_image_7.jpg',
     type: 'Boys',
     name: 'Harmony Hostel',
     distance: '1.2 km From Campus',
@@ -92,7 +92,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL008",
-    image: '../hostel-images/hostel_image_8.jpg',
+    image: 'hostel-images/hostel_image_8.jpg',
     type: 'Mixed',
     name: 'City View Hostel',
     distance: '5 km From Campus',
@@ -105,7 +105,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL009",
-    image: '../hostel-images/hostel_image_9.jpg',
+    image: 'hostel-images/hostel_image_9.jpg',
     type: 'Boys',
     name: 'Urban Nest',
     distance: '3 km From Campus',
@@ -118,7 +118,7 @@ export const hostelCardData = [
   },
   {
     id: "HSTL010",
-    image: '../hostel-images/hostel_image_10.jpg',
+    image: 'hostel-images/hostel_image_10.jpg',
     type: 'Girls',
     name: 'Scholars Haven',
     distance: '2.2 km From Campus',
@@ -130,3 +130,4 @@ export const hostelCardData = [
     },
   }
 ];
+
