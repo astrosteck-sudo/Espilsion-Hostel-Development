@@ -296,7 +296,7 @@ img {
   font-weight: bold;
 }
 .gender-button{
-  width: 32.3%;/*THIS WILL MAKE SURE BOTH BUTTONS WILL TAKE 50% EACH OF THE SPACE*/
+  width: 31.3%;/*THIS WILL MAKE SURE BOTH BUTTONS WILL TAKE 50% EACH OF THE SPACE*/
   background-color: #ffffff;
   font-weight: bolder;
   /* border: solid rgb(21, 243, 5); */
