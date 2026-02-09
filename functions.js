@@ -112,7 +112,7 @@ export function renderDisplayDetailsPage(){
       const hostelId = button.dataset.hostelId;
 
       console.log(hostelId);
-      window.location.href = `http://127.0.0.1:5500/display_page.html?hostelId=${hostelId}`;
+      window.location.href = `display_page.html?hostelId=${hostelId}`;
       // hostels.forEach((item) => {})
     });
   });
@@ -243,3 +243,4 @@ export function renderHostelSearch(){
             <img class="hostel-room" src="${image.url}" alt="${image.type}">
         </a>
  */
+
