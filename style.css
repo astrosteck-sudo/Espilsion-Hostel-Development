@@ -224,7 +224,7 @@ img {
   display: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   z-index: 1000;
-  /* border: solid red; */
+  border: solid red;
 }
 
 .suggestion-item {
@@ -530,7 +530,7 @@ input[type=number] {
 
 /*THIS IS THE FOOTER SECTION*/
 .site-footer {
-  position: sticky;
+  position: fixed; /* This makes the footer fixed at the bottom */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -667,4 +667,3 @@ input[type=number] {
     /* border: solid red; */
   }
 }
-
