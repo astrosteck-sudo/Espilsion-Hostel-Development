@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPISILION HOSTELS</title>
+    <link type="text/css" rel="stylesheet" href="font.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--THIS IS THE HEADER SECTION-->
+    <section class="header-section">
+        <a style="text-decoration: none; color: black;" href="index.html">
+            <pre  id="episilion">Episilion 
+Hostels</pre>
+        </a>
+        <nav class="navigation-links">
+            <a class="link" href="">Get A Rome</a>
+            <a class="link" href="">Find A Space</a>
+            <a class="link" href="">Community</a>
+            <a class="link" href="">Ask Episilion</a>
+            <a class="link" href="">More From Us</a>
+             
+             <!--THIS IS FOR THE LOGIN SIGNUP BUTTONS-->
+            <div  class="login-systems">
+                <a href="logins/login_page.html">LOGIN</a>
+                <a href="logins/sign_up_page.html">SIGN UP</a>
+            </div>
+        </nav>
+
+        <!--THIS IS FOR THE HAMBURGER BUTTON-->
+        <button class="hamburger-button" aria-label="Menu">
+            <img src="icons/hamburger_button_2.png" alt="Menu">
+        </button>
+    </section>
+    <button class="filter-image js-filter-image">
+        <img src="icons/sort.png">
+    </button>
+
+
+    <!-- <div class="filter-search-box-container">
+            <div class="filter-search-box js-search-box">
+             <p class="filter-search-box-text js-search-box-text">Search</p><img class="filter-search-icon" src="icons/search.png">
+            </div>
+        </div>   -->
+
+    <div class="search-box-container">
+        <!-- <p class="number-of-hostels-text">Over 300+ Hostel Available Around UPSA</p> -->
+        <div class="search-box">
+            <input type="text" name="search-box" id="search-box-text" placeholder="Search Hostel By Name" list="Hostels"><img class="search-icon" src="icons/search.png">
+            <!--USING THIS THE HOSTELS WILL BE SUGESTED WHEN THE USER IS TYPING-->
+                <!-- <datalist id="Hostels" class="hostel-sugestion"></datalist> -->
+            <div id="suggestions" class="suggestions-dropdown"></div>
+        </div>
+    </div>
+    <!-- <div class="filter-image js-filter-image">
+        <img src="icons/sort.png">
+    </div> -->
+    <div class="filter js-filter">
+        <div class="close-button js-close-button">
+            <img class="close-image" src="icons/close.png">
+        </div>
+        <div class="filter-by-items js-filter">
+            <label class="link gender-heading js-filter-button" for="filter">By Gender</label>
+            <div class="gender-buttons grid">
+                <button class="gender-button male-gender-button" data-gender-name="Boys"><img class="male-filter-icon" src="icons/man.png">Boys</button>   
+                <button class="gender-button female-gender-button" data-gender-name="Girls"><img class="female-filter-icon" src="icons/woman-avatar.png">Girls</button>
+                <button class="gender-button mixed-gender-button" data-gender-name="Mixed"><img class="mixed-filter-icon" src="icons/shuffle.png"><p id="mixed-text">Mixed</p></button>
+            </div>    
+
+            <div class="price-filter">
+                <h3 class="price-heading">By Price</h3>
+                <div class="price-input-container">
+                    <!-- <label for="user-min-price">Minimum Price</label> -->
+                    <input type="number" name="user-min-price" id="user-min-price" min="0" max="20000" class="price-input js-min-price-input" placeholder="Minimum Price">
+                    <!-- <label for="user-max-price">Maximum Price</label> -->
+                    <input type="number" name="user-max-price" id="user-max-price" min="0" max="20000" class="price-input js-max-price-input" placeholder="Maximum Price">
+                </div>
+            </div>
+        </div>
+        <div class="filter-search-box-container">
+            <div class="filter-search-box js-search-box">
+             <p class="filter-search-box-text js-search-box-text">Search</p><img class="filter-search-icon" src="icons/search.png">
+            </div>
+        </div>  
+    </div>
+    
+
+    <!--HOSTELS SECTION-->
+    <section class="hostels-section">
+        <!--THIS INFOMATION WILL BE DISPLAYED USING JAVASRIPT-->
+        <div class="hostels-cards js-hostel-cards"></div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p id="all-rights-text">&copy; 2026 Episilion. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="">Get A Rome</a>
+                <a href="">Find A Space</a>
+                <a href="">Community</a>
+                <a href="">Join Us</a>
+            </nav>
+        </div>  
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
