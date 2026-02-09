@@ -305,6 +305,7 @@ p.font-paragraph{
 
 .site-footer{
   clear: both;/*THIS CANCELS THE FLOAT SO FLOAT WILL ONLY AFFECT THE MEDIA SECTION*/
+  position: sticky;
   
   
 }
