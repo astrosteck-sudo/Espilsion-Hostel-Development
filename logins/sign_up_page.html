@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="sign_up_page.css">
+</head>
+<body class="body-element">
+    <section class="header-section">
+        <a style="text-decoration: none; color: black;" href="../index.html">
+            <pre  id="episilion">Episilion 
+Hostels</pre>
+        </a>
+        <nav class="navigation-links">
+            <a class="link" href="">Get A Rome</a>
+            <a class="link" href="">Find A Space</a>
+            <a class="link" href="">Community</a>
+            <a class="link" href="">Ask Episilion</a>
+            <a class="link" href="">More From Us</a>
+        </nav>
+
+        <!--THIS IS FOR THE HAMBURGER BUTTON-->
+        <button class="hamburger-button" aria-label="Menu">
+            <img src="../icons/hamburger_button_2.png" alt="Menu">
+        </button>
+    </section>
+
+    <main>
+        <form action="">
+            <p class="header-text">Create An Account</p>
+            <label for="user-name">Enter Your Name</label>
+            <input type="text" name="user-name" id="user-name" required placeholder="Kofi Foli" title="Enter Your Name Here"><br>
+
+            <label for="user-email">Enter Your Email Address</label>
+            <input type="email" name="user-email" id="user-email" required placeholder="kofi123@gmail.com" title="Enter Your Email Address Here"><br>
+
+            <label for="user-password">Enter Your Password</label>
+            <div class="password-wrapper">
+                <input type="password" name="user-password" id="user-password" required placeholder="123#abc" title="Enter Your Password Here">
+                <img src="../icons/closed-eyes.png" id="toggle-eye" alt="Show Password">
+            </div>
+            
+
+            <label for="user-comfirm-password">Comfirm Password</label>
+            <input type="password" name="user-comfirm-password" id="user-comfirm-password" required><br>
+
+            <p class="error-message">Error Message</p>
+
+            <div class="buttons">
+                <button type="submit">Create Account</button>
+                <!-- <input type="reset" name="clearForm" id="clearForm" value="clear Form" required><br> -->
+            </div>
+            <p class="altenative-text">Already Have An Account <a href="login_page.html">Login</a></p>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p id="all-rights-text">&copy; 2026 Episilion. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="">Get A Rome</a>
+                <a href="">Find A Space</a>
+                <a href="">Community</a>
+                <a href="">Join Us</a>
+            </nav>
+        </div>  
+    </footer>
+
+    
+
+    <script type="module" src="sign_up.js"></script>
+</body>
+</html>
