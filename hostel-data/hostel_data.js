@@ -1,7 +1,7 @@
 export const hostels = [
   {
     id: "HSTL001",
-    image: "../hostel-images/hostel_image_1.jpg",
+    image: "hostel-images/hostel_image_1.jpg",
     name: "Campus Annex",
     type: "Boys",
     university: "Example University",
@@ -41,12 +41,12 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_1.jpeg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_2.webp", type: "room" },
-        { url: "../hostel_rooms/hostel_room_3.jpg", type: "Kitchen" },
-        { url: "../hostel_rooms/hostel_room_4.webp", type: "bathroom" },
+        { url: "hostel_rooms/hostel_room_1.jpeg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_2.webp", type: "room" },
+        { url: "hostel_rooms/hostel_room_3.jpg", type: "Kitchen" },
+        { url: "hostel_rooms/hostel_room_4.webp", type: "bathroom" },
       ],
-      video: '../hostel_room_videos/hostel_video.mp4'
+      video: 'hostel_room_videos/hostel_video.mp4'
     },
     reviews: { averageRating: 1.3, totalReviews: 270 },
     aiTags: {
@@ -56,7 +56,7 @@ export const hostels = [
   },
   {
     id: "HSTL002",
-    image: "../hostel-images/hostel_image_2.jpg",
+    image: "hostel-images/hostel_image_2.jpg",
     name: "Unity Lodge",
     type: "Boys",
     university: "Example University",
@@ -93,10 +93,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_5.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_5.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_2.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_2.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_5.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_5.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_2.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_2.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -108,7 +108,7 @@ export const hostels = [
   },
   {
     id: "HSTL003",
-    image: "../hostel-images/hostel_image_3.jpg",
+    image: "hostel-images/hostel_image_3.jpg",
     name: "Queens Residence",
     type: "Girls",
     university: "Example University",
@@ -145,10 +145,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_6.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_6.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_3.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_3.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_6.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_6.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_3.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_3.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -160,7 +160,7 @@ export const hostels = [
   },
     {
     id: "HSTL004",
-    image: "../hostel-images/hostel_image_4.jpg",
+    image: "hostel-images/hostel_image_4.jpg",
     name: "Greenfield Hostel",
     type: "Mixed",
     university: "Example University",
@@ -198,10 +198,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_7.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_7.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_4.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_4.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_7.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_7.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_4.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_4.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -213,7 +213,7 @@ export const hostels = [
   },
   {
     id: "HSTL005",
-    image: "../hostel-images/hostel_image_5.jpg",
+    image: "hostel-images/hostel_image_5.jpg",
     name: "Sunrise Hostel",
     type: "Mixed",
     university: "Example University",
@@ -250,10 +250,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_8.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_8.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_5.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_5.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_8.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_8.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_5.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_5.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -265,7 +265,7 @@ export const hostels = [
   },
   {
     id: "HSTL006",
-    image: "../hostel-images/hostel_image_6.jpg",
+    image: "hostel-images/hostel_image_6.jpg",
     name: "Victory Hostel",
     type: "Boys",
     university: "Example University",
@@ -302,10 +302,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_9.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_9.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_6.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_6.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_9.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_9.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_6.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_6.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -317,7 +317,7 @@ export const hostels = [
   },
     {
     id: "HSTL007",
-    image: "../hostel-images/hostel_image_7.jpg",
+    image: "hostel-images/hostel_image_7.jpg",
     name: "Harmony Hostel",
     type: "Girls",
     university: "Example University",
@@ -354,10 +354,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_10.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_10.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_7.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_7.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_10.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_10.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_7.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_7.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -369,7 +369,7 @@ export const hostels = [
   },
   {
     id: "HSTL008",
-    image: "../hostel-images/hostel_image_8.jpg",
+    image: "hostel-images/hostel_image_8.jpg",
     name: "City View Hostel",
     type: "Mixed",
     university: "Example University",
@@ -406,10 +406,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_11.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_11.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_8.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_8.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_11.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_11.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_8.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_8.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -421,7 +421,7 @@ export const hostels = [
   },
   {
     id: "HSTL009",
-    image: "../hostel-images/hostel_image_9.jpg",
+    image: "hostel-images/hostel_image_9.jpg",
     name: "Urban Nest",
     type: "Girls",
     university: "Example University",
@@ -458,10 +458,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_12.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_12.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_9.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_9.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_12.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_12.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_9.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_9.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -473,7 +473,7 @@ export const hostels = [
   },
   {
     id: "HSTL010",
-    image: "../hostel-images/hostel_image_10.jpg",
+    image: "hostel-images/hostel_image_10.jpg",
     name: "Scholars Haven",
     type: "Girls",
     university: "Example University",
@@ -510,10 +510,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "../hostel_rooms/hostel_room_13.jpg", type: "compound" },
-        { url: "../hostel_rooms/hostel_room_13.jpg", type: "room" },
-        { url: "../hostel_kitchen_Images/hostel_kitchen_10.jpg", type: "kitchen" },
-        { url: "../hostel_bathrooms_images/hostel_bathroom_10.jpg", type: "bathroom" }
+        { url: "hostel_rooms/hostel_room_13.jpg", type: "compound" },
+        { url: "hostel_rooms/hostel_room_13.jpg", type: "room" },
+        { url: "hostel_kitchen_Images/hostel_kitchen_10.jpg", type: "kitchen" },
+        { url: "hostel_bathrooms_images/hostel_bathroom_10.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -524,3 +524,4 @@ export const hostels = [
     }
   }
 ];
+
