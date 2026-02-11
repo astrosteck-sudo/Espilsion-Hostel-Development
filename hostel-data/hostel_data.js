@@ -1,11 +1,13 @@
 export const hostels = [
   {
     id: "HSTL001",
-    image: "hostel-images/hostel_image_1.jpg",
+    image: "../hostel-images/hostel_image_1.jpg",
     name: "Campus Annex",
-    type: "Mixed",
+    type: "Boys",
     university: "Example University",
     yearEstablished: 2015,
+    distance: '2 km From Campus',
+    hostelPerks: 'Wifi • Laundry • Study • Area',
     location: {
       distanceToCampusMinutes: 5,
       directions: "Located in the city of Accra North Campus A major landmark is Behind Main Gate. For directions, Walk Past the main gate, turn left at the bookshop",
@@ -28,7 +30,7 @@ export const hostels = [
         { type: "4-in-1", price: 1000, availableRooms: 40 },
         { type: "5-in-1", price: 900, availableRooms: 40 },
       ],
-      furnishing: ["Bed", "Mattress", "Wardrobe", "Study Desk", "Chair"]
+      furnishing: ["Bed", "Mattress", "Wardrobe", "Study Desk", "Chair"],
     },
     amenities: ["Electricity", "Water Supply", "Generator", "Wifi", "Fan", "AirConditioning","Kitchen", "Study Area", "Laundry Area","Common Area", "Cctv", "FireSecurity", "Secure Gate", "Security Guard", "Errand Boy"],
     rules: ["Curfew Time (10:00 PM)", "Visitors Are Not Allowed", "Cooking Only In The Kitchen", "No Noise After 9PM", "No Smoking", "Pets Are Allowed", "No Fighting"],
@@ -39,14 +41,14 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_1.jpeg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_2.webp", type: "room" },
-        { url: "hostel_rooms/hostel_room_3.jpg", type: "Kitchen" },
-        { url: "hostel_rooms/hostel_room_4.webp", type: "bathroom" },
+        { url: "../hostel_rooms/hostel_room_1.jpeg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_2.webp", type: "room" },
+        { url: "../hostel_rooms/hostel_room_3.jpg", type: "Kitchen" },
+        { url: "../hostel_rooms/hostel_room_4.webp", type: "bathroom" },
       ],
       video: '../hostel_room_videos/hostel_video.mp4'
     },
-    reviews: { averageRating: 4.3, totalReviews: 27 },
+    reviews: { averageRating: 1.3, totalReviews: 270 },
     aiTags: {
       bestFor: ["Budget Students", "Quiet Students"],
       noiseLevel: "Low", distanceCategory: "Very Close", budgetCategory: "Medium"
@@ -54,11 +56,13 @@ export const hostels = [
   },
   {
     id: "HSTL002",
-    image: "hostel-images/hostel_image_2.jpg",
+    image: "../hostel-images/hostel_image_2.jpg",
     name: "Unity Lodge",
-    type: "Male",
+    type: "Boys",
     university: "Example University",
     yearEstablished: 2012,
+    distance: '1.8 km From Campus',
+    hostelPerks: 'Wifi • Cafeteria • Security',
     location: {
       distanceToCampusMinutes: 8,
       directions: "Near the East Campus library, turn right at the junction",
@@ -89,10 +93,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_5.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_5.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_2.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_2.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_5.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_5.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_2.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_2.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -104,11 +108,13 @@ export const hostels = [
   },
   {
     id: "HSTL003",
-    image: "hostel-images/hostel_image_3.jpg",
+    image: "../hostel-images/hostel_image_3.jpg",
     name: "Queens Residence",
-    type: "Female",
+    type: "Girls",
     university: "Example University",
     yearEstablished: 2018,
+    distance: '3.5 km From Campus',
+    hostelPerks: 'Wifi • Laundry • Gym',
     location: {
       distanceToCampusMinutes: 12,
       directions: "Opposite the South Campus cafeteria",
@@ -139,10 +145,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_6.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_6.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_3.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_3.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_6.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_6.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_3.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_3.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -154,11 +160,13 @@ export const hostels = [
   },
     {
     id: "HSTL004",
-    image: "hostel-images/hostel_image_4.jpg",
+    image: "../hostel-images/hostel_image_4.jpg",
     name: "Greenfield Hostel",
     type: "Mixed",
     university: "Example University",
     yearEstablished: 2010,
+    distance: '4 km From Campus',
+    hostelPerks: 'Laundry • RecreationalArea • Parking',
     location: {
       distanceToCampusMinutes: 15,
       directions: "Next to the sports complex",
@@ -190,10 +198,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_7.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_7.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_4.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_4.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_7.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_7.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_4.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_4.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -205,11 +213,13 @@ export const hostels = [
   },
   {
     id: "HSTL005",
-    image: "hostel-images/hostel_image_5.jpg",
+    image: "../hostel-images/hostel_image_5.jpg",
     name: "Sunrise Hostel",
     type: "Mixed",
     university: "Example University",
     yearEstablished: 2016,
+    distance: '2.5 km From Campus',
+    hostelPerks: 'Wifi • StudyRoom • Backup Power',
     location: {
       distanceToCampusMinutes: 6,
       directions: "Behind the science block, near the bookshop",
@@ -240,10 +250,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_8.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_8.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_5.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_5.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_8.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_8.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_5.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_5.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -255,11 +265,13 @@ export const hostels = [
   },
   {
     id: "HSTL006",
-    image: "hostel-images/hostel_image_6.jpg",
+    image: "../hostel-images/hostel_image_6.jpg",
     name: "Victory Hostel",
-    type: "Male",
+    type: "Boys",
     university: "Example University",
     yearEstablished: 2013,
+    distance: '6 km From Campus',
+    hostelPerks: 'Wifi • Laundry • Shuttle • Service',
     location: {
       distanceToCampusMinutes: 20,
       directions: "Located near the stadium, opposite the sports shop",
@@ -290,10 +302,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_9.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_9.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_6.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_6.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_9.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_9.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_6.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_6.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -305,11 +317,13 @@ export const hostels = [
   },
     {
     id: "HSTL007",
-    image: "hostel-images/hostel_image_7.jpg",
+    image: "../hostel-images/hostel_image_7.jpg",
     name: "Harmony Hostel",
-    type: "Female",
+    type: "Girls",
     university: "Example University",
     yearEstablished: 2019,
+    distance: '1.2 km From Campus',
+    hostelPerks: 'Wifi • Gym • Cafeteria',
     location: {
       distanceToCampusMinutes: 4,
       directions: "Opposite the North Campus gate",
@@ -340,10 +354,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_10.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_10.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_7.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_7.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_10.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_10.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_7.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_7.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -355,11 +369,13 @@ export const hostels = [
   },
   {
     id: "HSTL008",
-    image: "hostel-images/hostel_image_8.jpg",
+    image: "../hostel-images/hostel_image_8.jpg",
     name: "City View Hostel",
     type: "Mixed",
     university: "Example University",
     yearEstablished: 2011,
+    distance: '5 km From Campus',
+    hostelPerks: 'Laundry • Security • Balcony',
     location: {
       distanceToCampusMinutes: 18,
       directions: "Located near the city center, opposite the bus station",
@@ -390,10 +406,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_11.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_11.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_8.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_8.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_11.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_11.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_8.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_8.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -405,11 +421,13 @@ export const hostels = [
   },
   {
     id: "HSTL009",
-    image: "hostel-images/hostel_image_9.jpg",
+    image: "../hostel-images/hostel_image_9.jpg",
     name: "Urban Nest",
-    type: "Mixed",
+    type: "Girls",
     university: "Example University",
     yearEstablished: 2014,
+    distance: '3 km From Campus',
+    hostelPerks: 'Wifi • Power Backup • TV Lounge',
     location: {
       distanceToCampusMinutes: 7,
       directions: "Behind the engineering block, near the main road",
@@ -440,10 +458,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_12.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_12.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_9.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_9.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_12.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_12.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_9.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_9.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -455,11 +473,13 @@ export const hostels = [
   },
   {
     id: "HSTL010",
-    image: "hostel-images/hostel_image_10.jpg",
+    image: "../hostel-images/hostel_image_10.jpg",
     name: "Scholars Haven",
-    type: "Mixed",
+    type: "Girls",
     university: "Example University",
     yearEstablished: 2020,
+    distance: '2.2 km From Campus',
+    hostelPerks: 'Wifi • Quiet • Study Area • Laundry',
     location: {
       distanceToCampusMinutes: 3,
       directions: "Located beside the North Campus park",
@@ -490,10 +510,10 @@ export const hostels = [
     },
     media: {
       images: [
-        { url: "hostel_rooms/hostel_room_13.jpg", type: "compound" },
-        { url: "hostel_rooms/hostel_room_13.jpg", type: "room" },
-        { url: "hostel_kitchen_Images/hostel_kitchen_10.jpg", type: "kitchen" },
-        { url: "hostel_bathrooms_images/hostel_bathroom_10.jpg", type: "bathroom" }
+        { url: "../hostel_rooms/hostel_room_13.jpg", type: "compound" },
+        { url: "../hostel_rooms/hostel_room_13.jpg", type: "room" },
+        { url: "../hostel_kitchen_Images/hostel_kitchen_10.jpg", type: "kitchen" },
+        { url: "../hostel_bathrooms_images/hostel_bathroom_10.jpg", type: "bathroom" }
       ],
       video: null
     },
@@ -504,4 +524,3 @@ export const hostels = [
     }
   }
 ];
-
