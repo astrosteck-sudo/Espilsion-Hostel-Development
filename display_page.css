@@ -54,6 +54,7 @@ img {
 
 .more-details{
   margin-top: 5px;
+  margin-bottom: 90px;
 }
 
 .hostel-image-card {
@@ -324,7 +325,7 @@ p.font-paragraph{
 
 .site-footer{
   clear: both;/*THIS CANCELS THE FLOAT SO FLOAT WILL ONLY AFFECT THE MEDIA SECTION*/
-  position: sticky;
+  position: fixed;
   
   
 }
