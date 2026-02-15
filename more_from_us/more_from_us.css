@@ -104,5 +104,6 @@ h3{
 
 
 .site-footer{
-  position: sticky;
+  position: fixed;
+
 }
