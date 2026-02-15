@@ -54,6 +54,22 @@ body{
   background-attachment: fixed;
   transition: opacity 1s ease-in-out;
 }
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit; /* Inherit the background from the body */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust the blur intensity (e.g., 5px, 10px) */
+  -webkit-filter: blur(80px); /* For compatibility */
+  z-index: -1; /* Place the blurred element behind the content */
+}
+
 main{
   padding: 10px;
 }
@@ -161,3 +177,4 @@ table{
     position: sticky;
 
 }
+
