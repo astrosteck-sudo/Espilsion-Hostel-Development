@@ -53,7 +53,6 @@ body{
   background-position: center;
   background-attachment: fixed;
   transition: opacity 1s ease-in-out;
-  backdrop-filter: blur(80px); 
 }
 main{
   padding: 10px;
@@ -160,4 +159,5 @@ table{
 
 .site-footer{
     position: sticky;
+
 }
