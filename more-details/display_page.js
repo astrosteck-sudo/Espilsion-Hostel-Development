@@ -72,7 +72,7 @@ hostels.forEach((hostel) => {
             // console.log(item.image);
 
             //THE LOCATION DETAILS
-            imageCard.src = hostel.image;
+            imageCard.src = `../${hostel.image}` ;
             imageCard.alt = hostel.name;
             overlayText.textContent = hostel.name;
             locationParagraph.textContent = hostel.location.directions;
@@ -369,5 +369,6 @@ export function renderHostelDetails(parameter){
 // hostelCardMoreDetails.innerHTML = moreDetailsDataHtml;
 
 */
+
 
 
