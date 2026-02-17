@@ -20,17 +20,17 @@
 }
 
 @font-face {
-    font-family: PriceMart;
-    src: url(fonts/Pricemart_Sign/Pricemart_Sign.otf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: PriceMart;
+  src: url(fonts/Pricemart_Sign/Pricemart_Sign.otf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: Comorant-Garamond;
-    src: url(fonts/static/CormorantGaramond-SemiBold.ttf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: Comorant-Garamond;
+  src: url(fonts/static/CormorantGaramond-SemiBold.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face{
@@ -72,6 +72,13 @@
 @font-face{
   font-family: Survalia;
   src: url(fonts/Survalia.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: AntipastoPro;
+  src: url(fonts/AntipastoPro-ExtraBold_trial.ttf);
   font-weight: normal;
   font-style: normal;
 }
