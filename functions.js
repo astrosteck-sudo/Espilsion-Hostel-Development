@@ -6,8 +6,8 @@ export function renderRoomMedia(parameter) {
     parameter.media.images.forEach((image) => {
     html += `
         <div class="hostel-room-type-image">
-            <a href="${image.url}">
-                <img class="hostel-room" src="${image.url}" alt="${image.type}">
+            <a href="../${image.url}">
+                <img class="hostel-room" src="../${image.url}" alt="${image.type}">
             </a>
             <div class="hostel-room-type-overlay">
                 <span class="hostel-room-type-overlay-text">${image.type}</span>
@@ -493,5 +493,6 @@ hostelCardData.forEach((hostel) => {
     `;
   }
 });
+
 
 */
