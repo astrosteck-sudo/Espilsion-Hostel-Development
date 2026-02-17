@@ -1,7 +1,7 @@
 export const hostels = [
   {
     id: "HSTL001",
-    image: "hostel-images/hostel_image_1.jpg",
+    image: "../hostel-images/hostel_image_1.jpg",
     name: "Campus Annex",
     type: "Boys",
     university: "Example University",
@@ -524,4 +524,5 @@ export const hostels = [
     }
   }
 ];
+
 
