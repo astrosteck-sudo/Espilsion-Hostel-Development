@@ -1,0 +1,71 @@
+import { hostels } from "../hostel-data/hostel_data.js";
+
+
+navigationLinks();
+function navigationLinks(){
+  //THIS IS FOR THE HAMBURGER BUTTON
+  const hamburger = document.querySelector('.hamburger-button');
+  const navLinks = document.querySelector('.navigation-links');
+
+  //THIS TOGGLES THE HAMBURGER BUTTON ON AND OFF
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if(navLinks.classList.contains('active') && !e.target.closest('.navigation-links') && !e.target.closest('.hamburger-button')){
+      navLinks.classList.toggle('active')
+    }
+  })
+}
+
+//THIS DISPLAYS THE CURRENT IMAGE, THEN INCREASES THE INDEX BY ONE,
+//  THEN CHECKS IF THE INDEX IS GREATOR THAN THE LENGTH OF THE ARRAY 
+// OF IMGES IF SO IT SETS THE INDEX BACK TO 0 AND STARTS AGAIN
+let index = 0;
+setInterval(() => {
+  document.body.style.backgroundImage = `url(${hostels[index].image})`;
+  index++;
+  if (index >= hostels.length) {
+    index = 0; // loop back to the first image
+  }
+}, 6000); // change every 6 seconds
+
+
+//THIS TOGGLES THE EYE BETWEEN OPEN AND CLOSE
+const eyeImage = document.querySelector('#toggle-eye');
+const input = document.querySelector('#user-password');
+eyeImage.addEventListener('click', () => {
+    if(input.type === 'password'){
+        eyeImage.src = '../icons/visible.png';
+        input.type = 'text';
+    }else{
+        input.type = 'password';
+        eyeImage.src = '../icons/closed-eyes.png';
+    }  
+})
+
+
+
+const comfirmEyeImage = document.querySelector('#comfirm-toggle-eye');
+const comfirmInput = document.querySelector('#comfirm-user-password');
+comfirmEyeImage.addEventListener('click', () => {
+    if(comfirmInput.type === 'password'){
+        comfirmEyeImage.src = '../icons/visible.png';
+        comfirmInput.type = 'text';
+    }else{
+        comfirmInput.type = 'password';
+        comfirmEyeImage.src = '../icons/closed-eyes.png';
+    }  
+})
+
+
+
+
+
+
+
+
+
+
+

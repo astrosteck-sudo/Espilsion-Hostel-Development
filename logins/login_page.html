@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="sign_up_page.css">
+
+</head>
+<body>
+    <section class="header-section">
+        <a class="episilion" href="../index.html">
+            <pre>Episilion 
+Hostels</pre>
+        </a>
+        <nav class="navigation-links">
+            <a class="link" href="../index.html">Home</a>
+            <a class="link" href="../abouts/about.html">About Us</a>
+            <a class="link" href="">Ask Episilion</a>
+            <a class="link" href="../more_from_us/more_from_us.html">More From Us</a>
+             
+             <!--THIS IS FOR THE LOGIN SIGNUP BUTTONS-->
+        </nav>
+
+        <!--THIS IS FOR THE HAMBURGER BUTTON-->
+        <button class="hamburger-button" aria-label="Menu">
+            <img src="../icons/hamburger_button_2.png" alt="Menu">
+        </button>
+    </section>
+
+    <main>
+        <div class="login-box">
+        <form action="">
+            <h2>Welcome Back</h2>
+            <div class="input-box">
+                <!-- <span class="icon"></span> -->
+                <input type="eail" name="user-email" id="user-email" required title="Enter Your Email Address Here"><br>
+                <label for="user-email">Enter Your Email Address</label>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="user-password" id="user-password" required title="Enter Your Password Here">  
+                <label for="user-password">Enter Your Password</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Login</button>
+            </div>
+            <p class="altenative-text">Already Have An Account <a href="sign_up_page.html">Sign Up</a></p>
+
+            <!-- <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div> -->
+        </form>
+    </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p id="all-rights-text">&copy; 2026 Episilion. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="abouts/about.html">About Us</a>
+                <a href="">Community</a>
+                <a href="">Ask Episilion</a>
+            </nav>
+        </div>  
+    </footer>
+
+    <script type="module" src="login.js"></script>
+</body>
+</html>

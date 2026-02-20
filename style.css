@@ -1,0 +1,590 @@
+/* ---- CROSS-BROWSER RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth 5s;
+  scroll-padding-top: 70px; /* equal to your header height */
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---- CROSS-BROWSER PREFIXES ---- */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.smooth {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+.header-section{
+  /* border: solid red; */
+  height: 10%;
+  display: flex;
+  align-items: center;
+  /* width: 100vw; */
+  justify-content: space-between;
+  flex-wrap: wrap;/*THIS LET ITEMS WRAP TO THE NEXT LINE IF THE SCREEN IS TO SMALL*/
+  background-color: #d3c84d;
+
+  position: sticky;/*THIS MAKES THE HEADER STICKY WHEN SCOLLING IF YOU MAKE THIS sticky YOU WONT NEED THE WIDTH*/
+  top: 0;/*STCIKS THE HEADER AT THE VERY TOP OF THE PAGE*/
+  z-index: 1000;/*THIS ENSURES THE HEADER STAYS ABOVE THE CONTENT*/
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: scroll;
+  overflow: hidden;
+  scrollbar-width: none;
+
+}
+
+.login-systems{
+  width: 20vw;
+  display: flex;
+  /* flex-wrap: wrap; */
+  text-align: center;
+  align-items: center;
+  justify-content:space-around;
+  gap: 10px;
+}
+.login-systems > a{
+  font-size: 20px;
+  border-radius: 11px;
+  width: 50%;
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  font-weight: bolder;
+}
+.episilion{
+  font-size: 15px;
+  text-decoration: none; 
+  color: rgb(194, 8, 8); 
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.episilion pre{
+  font-family: BBHBartle;
+}
+.episilion:active {
+  border: solid white;
+  border-radius: 10px;
+}
+.navigation-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1 1 auto;/*(flex_grow: 1)NAV TAKES REMAINING SPACE (flex_shrink: 1)SHRINKS IF SCREEN IS NARROW (flex-basis: auto)NATURAL SIZE.THIS MAKES NAV AUTOMATICALLY ADJUST TO DIFFRENT WIDTHS*/
+  text-align: right;
+  align-items: center;
+  justify-content: space-between;
+  /* border: solid red; */
+  padding-left: 50px;
+}
+.navigation-links .link{
+  text-decoration: none;
+  /* border: solid red; */
+  font-family: AntipastoPro;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+.link{
+  float: left;
+}
+
+.filter-image{
+  border: solid #d3c84d;
+  width: min(40px, 30%);
+  height: min(50px, 10%);
+  margin-left: 5px;
+  display: block;
+  cursor: pointer;
+  position: fixed;/*THIS MAKES THE HEADER STICKY WHEN SCOLLING IF YOU MAKE THIS sticky YOU WONT NEED THE WIDTH*/
+  z-index: 1000;/*THIS ENSURES THE button STAYS ABOVE THE CONTENT AND ALWAYS IN FRONT OF THE CONTENT*/
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+.filter-image:active {
+  transform: scale(0.9); /* shrinks slightly when clicked */
+}
+ .search-box-container {
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  /*align-items: center;        center Vertically */
+  height: clamp(2px, 1vw, 1%);              /* full viewport height */
+}
+.search-box {
+  width: min(400px, 60%);             /* fixed small width */
+  height: min(50px, 40%);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 16px;            /* readable text */
+  background-color: #ffffff;
+  border-radius: 23px 23px 23px 23px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;    /* center horizontally */
+  margin-top: 10px;
+}
+#search-box-text{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;         /* rounded corners */
+  font-size: clamp(1rem,2vw, 1.3rem);
+  text-align: center;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 23px 23px 23px 23px;
+  
+}
+.search-icon{
+  width: min(40px, 30%);  /* adjust size */
+  cursor: pointer;
+  height: 100%;
+}
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  margin-top: 25px;
+}
+
+.suggestion-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion-item:hover {
+  background-color: #f5f5f5;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+
+
+
+.filter{
+  height: 30%;
+  top: 0;
+  height: 95%;
+  width: min(300px, 70%);
+  opacity: 0;
+  background-color: #d3c84d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 1rem;
+  transition: right 0.3s ease-in-out;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  display: block;
+  position: fixed;/*THIS MAKES THE HEADER STICKY WHEN SCOLLING IF YOU MAKE THIS sticky YOU WONT NEED THE WIDTH*/
+  z-index: 1000;/*THIS ENSURES THE button STAYS ABOVE THE CONTENT AND ALWAYS IN FRONT OF THE CONTENT*/
+  pointer-events: none;/*THIS WILL MAKE SURE THAT WHEN THE OPACITY IS SET TO ZERO IT CAN NOT BE CLICKABLE*/
+}
+.filter.open { 
+  opacity: 1; 
+  pointer-events: auto; 
+}
+.close-button {
+  position: absolute;   /* place it in a corner */
+  top: 10px;
+  right: 10px;
+  cursor: pointer;      /* show pointer on hover */
+  width: 20px;
+  height: 30px;
+}
+.close-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* keep image proportions */
+}
+.filter-by-items{
+  width: 100%;
+  margin-top: 30px;
+}
+.gender-button{
+  width: 31.3%;/*THIS WILL MAKE SURE BOTH BUTTONS WILL TAKE 50% EACH OF THE SPACE*/
+  background-color: #ffffff;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+}
+.gender-button:active {
+  transform: scale(0.9); /* shrinks slightly when clicked */
+}
+.male-filter-icon, .female-filter-icon, .mixed-filter-icon{
+  width: min(20px, 30%);
+  float: left;
+  cursor: pointer;
+  height: 26px;
+}
+.filter-search-box:active {
+  background-color: #c2c5a4;
+}
+
+.filter-search-box-container {
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  height: 100px;  
+}
+
+.filter-search-box {
+  display: flex;              /* align text + icon nicely */
+  align-items: center;
+  gap: 8px;                   /* spacing between text and icon */
+  background: #f0f0f0;        /* example styling */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter-search-box-text{
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.filter-search-icon {
+  width: 24px;  /* adjust size */
+  height: 24px;
+  transition: transform .6s ease;
+}
+.filter-header{
+  font-family: Playfair Display;
+  text-align: center;
+}
+
+/*THIS IS TO REMOVE THE ARROWS IN THE INPUT ELEMENT*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.price-filter{
+  margin-top: 20px;
+}
+.price-heading{
+  text-align: center;
+}
+.price-input-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.price-input{
+  width: 45%;
+  text-align: center;
+  height: 40px;
+  border-radius: 5px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+.no-results{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+.not-found-icon{
+  width: min(300px, 60%);
+}
+.not-found-text{
+  margin-bottom: 20px;
+  font-family: Fonte;
+  font-size: clamp(90px, 10%);
+  font-weight: bold;
+}
+.not-found-hostel-name{
+  color: red;
+  font-weight: bolder;
+}
+
+
+.hamburger-button{
+  display: none;
+}
+/*HOSTELS INFORMATION*/
+.hostels-cards{
+  display: flex;/*THIS WILL MAKE THE CARDS SIT SIDE BY SIDE*/
+  flex-wrap: wrap;/*THIS WILL MAKE THE CARD WRAP TO THE NEXT LINE IF THERES NOT ENOUGHT SPACE*/
+  gap: 1rem;
+  justify-content: center;/*THIS WILL MAKE THE CARDS CCENTER HORIZONTALLY*/
+  padding: 1rem;
+  box-sizing: border-box;/*THIS WILL INLCUDE PADDING IN WIDTH*/
+  height: 100%;
+  margin-bottom: 80px;
+}
+ .hostel-card{
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 250px;/*THE 250PX HERE IS THAT THE STARTING SIZE OF THE CARD WILL BE 250PX: THIS IS THE FLEX BASIS*/
+  max-width: 300px;
+  min-width: 200px;
+  box-sizing: border-box;/*THIS WILL MAKE SURE THAT THE TOTAL WIDTH WILL ALWAYS BE 200PX NO MATTER HOW MUCH PADDING OR BORDER YOU ADD INSIDE*/
+  text-align: left;
+  transition: transform 0.3s;
+  margin-bottom: 50px;
+}
+
+.image-container{
+  position: relative;/*ALLOWS ABOLUTE POSITIONING INSIDE*/
+  display: inline-block;
+}
+#hostel-card-image{
+  width: 100%;
+  height: 60%;
+  border-radius: 7px 7px 0px 0px;
+  display: block;
+}
+.overlay{
+  position: absolute; 
+  bottom: 8px; /* distance from bottom edge */ 
+  right: 8px; /* distance from right edge */ 
+  background: #ffffff; /* semi-transparent background */ 
+  color: black; padding: 4px 8px; 
+  border-radius: 4px; font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.hostel-type-text{
+  position: absolute; 
+  bottom: 8px; /* distance from bottom edge */ 
+  left: 8px; /* distance from right edge */ 
+  background: #ffffff; /* semi-transparent background */ 
+  color: black; padding: 4px 8px; 
+  border-radius: 4px; font-size: 0.9rem;
+  font-weight: bolder;
+}
+#hostel-price{
+  color: green;
+  font-size: clamp(1rem,2vw, 1.2rem);
+  font-family: PriceMart;
+}
+#hostel-name{
+  width: 100%;
+  font-size: clamp(1.2rem, 2vw, 1rem);
+  margin-top: 0px;
+  font-family: Playfair Display;
+  font-weight: bolder;
+    
+}
+#hostel-distace{
+  margin: 0.2rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);/*RESPONSIVE FONT SIZE*/
+  font-family: Comorant-Garamond;
+}
+#hostel-perks{
+  font-family: Hezba;
+  text-align: center;
+  text-decoration: solid;
+}
+.hostel-card:hover{
+    transform: translateY(-5px);
+}
+.view-more-details{
+  width: 100%;
+  height:12%;
+  font-size: clamp(1.0rem, 2vw, 1rem);
+  background-color: rgb(17, 175, 227);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.view-more-details:hover{
+  background-color: rgb(8, 92, 120);
+}
+
+
+
+/*THIS IS THE FOOTER SECTION*/
+.site-footer {
+  position: fixed; /* This makes the footer fixed at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.footer-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;/*THIS LIMITS FOOTER WIDTH ON LARGE SCREENS*/
+  margin: 0 auto;/*THIS WILL CENTER THE CONTENT HORIZONTALLY*/
+  gap: 1rem;
+}
+.site-footer p{
+  margin: 0;/*THIS WILL REMOVE THE DEFAULT MARGIN*/
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-links a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  transition: color 0.3s;
+}
+
+.footer-links a:hover{
+  color: #00bfff;
+}
+
+@media only screen and (max-width: 992px){
+    /* Default hidden sidebar */
+  .navigation-links {
+    position: fixed;
+    top: 0;
+    right: -5050px;  /*hide off-screen */
+    height: 100%;
+    width: 65%;
+    background-color: #d3c84d;
+    display: flex;
+    opacity: 1;/*THIS MAKES IT DISAPEAR INITIALLY BUT ONLY REAPPEARS WHEN THE BUTTON IS CLICKED*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1rem;
+    transition: right 0.3s ease-in-out;
+    overflow: scroll;
+    padding-left: 0px;
+  }
+  /* Active state: visible sidebar */
+  .navigation-links.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  /* Style links inside sidebar */
+  .navigation-links a {
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .login-systems{
+    width: 60vw;
+  }
+  .login-systems > a{
+    padding: 8px;
+  }
+
+  .hamburger-button {
+    display: block;
+    cursor: pointer;
+    width: 5%;
+    height: 100%;
+    border: none;
+  }
+  .hamburger-button img{
+    background-color: #d3c84d;
+    height: 100%;
+    width: 100%;
+  }
+  .navigation-links {
+    display: flex;
+  }
+
+  .login-systems a{
+    margin-left: 0px;
+  }
+}
+
+/*Mobile Display*/
+@media screen and (max-width: 600px){
+
+  .hamburger-button {
+    width: 10%;
+    height: 40%;
+    border: none;
+  }
+  .navigation-links.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  #all-rights-text{
+    width: 100%;
+    text-align: center;
+  }
+  .footer-links{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+  .hamburger-button {
+    width: 8%;
+    height: 50%;
+    border: none;
+  }
+}
